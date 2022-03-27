@@ -90,7 +90,7 @@ PM_START_TEXT = """
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ───────────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: Ronin!*
 ───────────────────────"""
 
 buttons = [
@@ -105,14 +105,14 @@ buttons = [
         InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🫂", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [  
-        InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/JinKazamaXBot?startgroup=true"),
     ], 
     
 ]
 
-TIANA_IMG = f"{START_IMG}"
-TIANA_VIDA = f"{BOT_TUT}"
-TIANA_VIDB = f"{MUSICBOT_TUT}"
+TIANA_IMG = f"https://te.legra.ph/file/1b44fb4780b4dd089b069.jpg"
+TIANA_VIDA = f"https://te.legra.ph/file/1b44fb4780b4dd089b069.jpg"
+TIANA_VIDB = f"https://te.legra.ph/file/1b44fb4780b4dd089b069.jpg"
 
 HELP_STRINGS = """*Click on the Buttons Bellow to get Documention about Specific Modules*"""
 
@@ -250,8 +250,8 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="ADD ME", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"), 
-                   InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")]
+                  [InlineKeyboardButton(text="ADD ME", url=f"https://t.me/JinKazamaXBot?startgroup=true"), 
+                   InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/JinKazama_support")]
                  ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
@@ -398,12 +398,12 @@ def tiana_callback_handler(update, context):
         )
     elif query.data == "tiana_help":
         query.message.edit_text(
-            text=f"""*Nᴇᴡ  Tᴏ  {BOT_NAME}!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  {BOT_NAME}  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
+            text=f"""*Nᴇᴡ  Tᴏ  jin kazamma!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  jinkazamma  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
 Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ. Bᴀsɪᴄ  Tᴏᴜʀ  Sᴛᴀʀᴛᴇᴅ  Tᴏ  Kɴᴏᴡ  Aʙᴏᴜᴛ  Hᴏᴡ  Tᴏ  Usᴇ  Mᴇ*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="tiana_vida")],
-               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url="https://t.me/{BOT_USERNAME}?startgroup=true")],       
+               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url="https://t.me/JinKazamaXBot?startgroup=true")],       
                 [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_"),
                  InlineKeyboardButton(text="➡️", callback_data="tiana_helpa")]
               ]
@@ -490,7 +490,7 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
-*Updates Channel:* @{UPDATE_CHANNEL}
+*Updates Channel:* @Ronin_Fighters_Fd
 *Support Chat:* @{SUPPORT_GROUP}""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -523,8 +523,8 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             f"\n\n2.) then promote me as admin and give all permissions except anonymous admin."
             f"\n\n3.) add @{ASS_USERNAME} to your group."
             f"\n\n4.) turn on the video chat first before start to play music."
-            f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @{UPDATE_CHANNEL}",
+            f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @Ronin_Fighters_Fd*"
+            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @jinkazama_Support",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -626,7 +626,7 @@ Tiana has a additional feature for non-admin users who want to use admin command
             
 Bot Admins
                        
-• @{OWNER_USERNAME}, bot creator and main developer.
+• @Badboi_official, bot creator and main developer.
             
 • The Doctor, server manager and developer.
             
@@ -634,7 +634,7 @@ Bot Admins
             
 Support
             
-• [Click here](https://t.me/{SUPPORT_CHAT}) to consult the updated list of Official Supporters of the bot.
+• [Click here](https://t.me/Ronin_Fighters_Fd) to consult the updated list of Official Supporters of the bot.
             
 • Thanks to all our donors for supporting server and development expenses and all those who have reported bugs or suggested new features.
             
@@ -770,7 +770,7 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="t.me/KIRITO_1240"),
+                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="t.me/Roninopp"),
                  ]
                 ]
             ),
@@ -802,8 +802,8 @@ def tiana_about_callback(update: Update, context: CallbackContext):
                      InlineKeyboardButton(text="❗️ 𝘼𝙗𝙤𝙪𝙩", callback_data="tiana_about"),  
                  ],
                  [  
-                    InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="tiana_support"),
-                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="jinKazma_Support"),
+                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/@Badboi_official"),
                  ],
                  [
                      InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="tiana_term"),
@@ -1057,7 +1057,7 @@ def donate(update: Update, context: CallbackContext):
             text = "𝙔𝙤𝙪 𝘾𝙖𝙣 𝘿𝙤𝙣𝙖𝙩𝙚 𝙈𝙚 𝙃𝙚𝙧𝙚", parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
                [
                  [                   
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"@Badboi_official"),
                  ]
                ]
         )
@@ -1072,7 +1072,7 @@ def donate(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                [
                  [                   
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"@Badboi_official"),
                  ]
                ]
              )
